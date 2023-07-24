@@ -1,3 +1,4 @@
+import { PropTypes } from "react";
 import FeedbackItem from "./FeedbackItem";
 
 function FeedbackList({ feedback }) {
@@ -13,5 +14,9 @@ function FeedbackList({ feedback }) {
 		</div>
 	);
 }
+
+FeedbackList.propTypes = {
+	feedback: PropTypes.array,
+};
 
 export default FeedbackList;
